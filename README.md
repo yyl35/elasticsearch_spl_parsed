@@ -1,6 +1,6 @@
 Simply convert SPL (Splunk Processing Language) similar to Splunk into DSL (Domain-specific Language)
 
-Using spl_to_es.py Directly
+Using soc/spl_to_es.py Directly
 If you don't want to run the Django project, you can directly use the spl_to_es.py file. To do this, modify the parsed_query variable assignment on line 380:
 
 parsed_query = parse_query(spl_query3)
