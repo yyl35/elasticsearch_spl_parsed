@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Search Results</h2>
+  {{ dataframe|safe }}
+  <a href="{% url 'search' %}" class="btn btn-primary">New Search</a>
+{% endblock %}
+
+

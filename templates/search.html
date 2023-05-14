@@ -1,0 +1,22 @@
+    {% extends "base.html" %}
+
+    {% block content %}
+      <h2>Search Elasticsearch</h2>
+      <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="spl_query">SPL Query:</label>
+          <input type="text" class="form-control" id="spl_query" name="spl_query" placeholder="Enter SPL query">
+        </div>
+        <div class="form-group">
+          <label for="start_time">Start Time:</label>
+          <input type="datetime-local" class="form-control" id="start_time" name="start_time">
+        </div>
+        <div class="form-group">
+          <label for="end_time">End Time:</label>
+          <input type="datetime-local" class="form-control" id="end_time" name="end_time">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    {% endblock %}
+
