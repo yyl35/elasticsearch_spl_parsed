@@ -1,5 +1,4 @@
-# **Simply convert SPL (Splunk Processing Language) similar to Splunk
-into DSL (Domain-specific Language)**
+# **Simply convert SPL (Splunk Processing Language) similar to Splunk into DSL (Domain-specific Language)**
 
 Using soc/spl_to_es.py Directly If you don't want to run the Django
 project,  
