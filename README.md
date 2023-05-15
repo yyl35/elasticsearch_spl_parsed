@@ -1,5 +1,5 @@
-**Simply convert SPL (Splunk Processing Language) similar to Splunk into
-DSL (Domain-specific Language)**
+<big>**Simply convert SPL (Splunk Processing Language) similar to Splunk
+into DSL (Domain-specific Language)**>/big
 
 Using soc/spl_to_es.py Directly If you don't want to run the Django
 project,  
@@ -11,7 +11,8 @@ spl_to_es.py The script will output the converted Elasticsearch DSL
 query.
 
 
-**Installation and Setup**  
+<big>**Installation and Setup**>/big
+
 Install Django and other required packages using the requirements.txt
 file by running the following command: pip install -r requirements.txt
 Navigate to the Django project directory (where the manage.py file is
@@ -20,16 +21,18 @@ python manage.py runserver Open a web browser and visit
 http://127.0.0.1:8000/ to access the Django application.
 
 
-**Usage Example**
+<big>**Usage Example**>/big
 
-: index=indexA | stats count(field1) by field2 | where field = "abc" or
-field3 = "efg" | eval field4="123"+field2+"abc" | table field1 field2
+<pre>
+```python
+index=indexA | stats count(field1) by field2 | where field = "abc" or
+field3 = "efg" | eval field4="123"+field2+"abc" | table field1 field2```
 
 index=filebeat-* | exists bytes | timechart sum(bytes) by clientip |
-where sum > 1000 | eval cnt=sum * 100 | table @timestamp clientip cnt
+where sum > 1000 | eval cnt=sum * 100 | table @timestamp clientip cnt```
+</pre>
 
-
-**Available functions:**  
+<big>**Available functions:**>/big  
 index  
 stats  
 timechart  
@@ -40,7 +43,7 @@ table
 where
 
 
-**Explanation of each function:**
+<big>**Explanation of each function:**>/big
 
 index: Specifies the index or indexes to search in ES. It filters the
 data based on the specified index(es).
@@ -68,3 +71,8 @@ choose and arrange the fields to be displayed in the output.
 where: Filters the search results based on specified conditions. It
 helps in narrowing down the results by applying logical conditions on
 fields, such as equality, inequality, or pattern matching.
+
+```
+
+```
+
