@@ -35,7 +35,7 @@ stats
 timechart  
 eval  
 split  
-exist  
+exists  
 table  
 where
 
@@ -60,7 +60,7 @@ derived fields.
 
 split: Splits a JSON field's key into strings.
 
-exist: Filter the field where exists in document
+exists: Filter the field where exists in document
 
 table: Displays the specified fields in tabular format. It allows you to
 choose and arrange the fields to be displayed in the output.
