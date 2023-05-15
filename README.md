@@ -1,5 +1,5 @@
 **Simply convert SPL (Splunk Processing Language) similar to Splunk into
-DSL (Domain-specific Language) **
+DSL (Domain-specific Language)**
 
 Using soc/spl_to_es.py Directly If you don't want to run the Django
 project,  
@@ -20,7 +20,8 @@ python manage.py runserver Open a web browser and visit
 http://127.0.0.1:8000/ to access the Django application.
 
 
-**Usage Example **
+**Usage Example**
+
 : index=indexA | stats count(field1) by field2 | where field = "abc" or
 field3 = "efg" | eval field4="123"+field2+"abc" | table field1 field2
 
