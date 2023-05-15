@@ -13,10 +13,18 @@ query.
 # **Installation and Setup**
 
 Install Django and other required packages using the requirements.txt
-file by running the following command: pip install -r requirements.txt
+file by running the following command:
+
+<pre>
+pip install -r requirements.txt
+</pre>
 Navigate to the Django project directory (where the manage.py file is
 located), and run the following command to start the development server:
-python manage.py runserver Open a web browser and visit
+
+<pre>
+python manage.py runserver
+</pre>
+Open a web browser and visit
 http://127.0.0.1:8000/ to access the Django application.
 
 
@@ -47,7 +55,7 @@ where**
 data based on the specified index(es).
 
 **stats:** Performs statistical operations on the search results. It allows
-you to calculate various statistics such as count, sum, average, etc.,
+you to calculate various statistics such as count, sum, avg, etc.,
 on specific fields.
 
 **timechart:** Generates a time-based chart or table from the search
