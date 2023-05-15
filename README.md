@@ -1,5 +1,5 @@
 <big>**Simply convert SPL (Splunk Processing Language) similar to Splunk
-into DSL (Domain-specific Language)**>/big
+into DSL (Domain-specific Language)**</big
 
 Using soc/spl_to_es.py Directly If you don't want to run the Django
 project,  
@@ -11,7 +11,7 @@ spl_to_es.py The script will output the converted Elasticsearch DSL
 query.
 
 
-<big>**Installation and Setup**>/big
+<big>**Installation and Setup**</big
 
 Install Django and other required packages using the requirements.txt
 file by running the following command: pip install -r requirements.txt
@@ -21,18 +21,17 @@ python manage.py runserver Open a web browser and visit
 http://127.0.0.1:8000/ to access the Django application.
 
 
-<big>**Usage Example**>/big
+<big>**Usage Example**</big
 
 <pre>
-```python
 index=indexA | stats count(field1) by field2 | where field = "abc" or
-field3 = "efg" | eval field4="123"+field2+"abc" | table field1 field2```
+field3 = "efg" | eval field4="123"+field2+"abc" | table field1 field2
 
 index=filebeat-* | exists bytes | timechart sum(bytes) by clientip |
-where sum > 1000 | eval cnt=sum * 100 | table @timestamp clientip cnt```
+where sum > 1000 | eval cnt=sum * 100 | table @timestamp clientip cnt
 </pre>
 
-<big>**Available functions:**>/big  
+<big>**Available functions:**</big  
 index  
 stats  
 timechart  
@@ -43,7 +42,7 @@ table
 where
 
 
-<big>**Explanation of each function:**>/big
+<big>**Explanation of each function:**</big
 
 index: Specifies the index or indexes to search in ES. It filters the
 data based on the specified index(es).
